@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM ASSIGMENT</title>
+    <link rel="stylesheet" href="../css/dom.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>KINDLY DROP YOUR VALUEABLE PRODUCT REVIEW:</h1>
+      <form id="reviewForm">
+        <div class="form-group">
+          <label for="name">NAME:</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="rating">RATING:</label>
+          <select name="rating" id="rating" required>
+            <option>SELECT A RATING</option>
+            <option value="5">5 stars-excellent</option>
+            <option value="4">4 stars-very good</option>
+            <option value="3">3 stars-good</option>
+            <option value="2">2 stars-fair</option>
+            <option value="1">1 star-poor</option>
+          </select>
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="comment">COMMENT:</label>
+          <textarea name="comment" id="comment" rows="2"></textarea>
+        </div>
+        <br />
+        <button type="submit" class="press">SUBMIT REVIEW</button>
+      </form>
+      <div id="reviews">
+        <h2>RECENT REVIEWS:</h2>
+        <!-- recent reviews will appear here. -->
+      </div>
+    </div>
+    <script src="../js/dom.js"></script>
+  </body>
+</html>
